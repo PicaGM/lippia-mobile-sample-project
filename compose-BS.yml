@@ -8,6 +8,6 @@ services:
   lippia:
     image: crowdar/lippia:3.2.1.1
     volumes:  
-        - /builds/$CI_PROJECT_PATH/mnt:/opt/workspace/automation
-    working_dir: /opt/workspace/automation
+        - /builds/$CI_PROJECT_PATH/mnt:/mnt
+    working_dir: /mnt
     command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
