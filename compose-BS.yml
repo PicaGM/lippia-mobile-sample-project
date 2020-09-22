@@ -1,0 +1,13 @@
+# Note: It requires docker-compose 1.13.0
+#
+# Usage: docker-compose up -d
+version: "2.2"
+
+services:
+
+  lippia:
+    image: crowdar/lippia:3.2.1.1
+    volumes:  
+        - /builds/$CI_PROJECT_PATH/mnt:/opt/workspace/automation
+    working_dir: /opt/workspace/automation
+    command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
