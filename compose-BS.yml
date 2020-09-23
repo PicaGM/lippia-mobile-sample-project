@@ -10,7 +10,7 @@ services:
     privileged: true
     volumes:  
         - .:/automation-workspace
-        - ./.reports:/automation-workspace/target/
+        - ../reports:/automation-workspace/target/
     working_dir: /automation-workspace
     command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
     environment:
