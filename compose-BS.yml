@@ -11,5 +11,8 @@ services:
         - .:/automation-workspace
     working_dir: /automation-workspace
     command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
+    environment:
+        - BS_USER: $BS_USER
+        - BS_KEY: $BS_KEY
 
 
