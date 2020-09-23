@@ -3,7 +3,7 @@
   "device": "{{deviceName}}",
   "os_version": "{{os.version}}",
   "project": "Mobile sample Project",
-  "app": "{{app}}",
+  "app_url": "{{app}}",
   "build": "Mobile {{deviceName}} Build",
   "name": "Bstack-[Java] Mobile Sample Test",
   "resetKeyboard": "true",
