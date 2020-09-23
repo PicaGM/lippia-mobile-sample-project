@@ -8,7 +8,7 @@ services:
   lippia:
     image: crowdar/lippia:3.2.1.1
     volumes:  
-        - /builds/root/lippia-mobile-sample-project/mnt:/mnt
+        - $(pwd):/mnt
     working_dir: /mnt
     environment:
             - CUSTOM_COMMAND=ls -la
