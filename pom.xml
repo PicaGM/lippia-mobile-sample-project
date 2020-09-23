@@ -108,8 +108,8 @@
                         <suiteXmlFile>${cucumber.runner}</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
-                        <BrowserStackUser>${BS_USER}</BrowserStackUser>
-                        <BrowserStackKey>${BS_KEY}</BrowserStackKey>
+                        <BrowserStackUser>${env.BS_USER}</BrowserStackUser>
+                        <BrowserStackKey>${env.BS_KEY}</BrowserStackKey>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
