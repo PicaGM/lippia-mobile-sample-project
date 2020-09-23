@@ -10,4 +10,6 @@ services:
     volumes:  
         - /builds/root/lippia-mobile-sample-project/mnt:/mnt
     working_dir: /mnt
-    command: pwd && ls -la
+    environment:
+            - CUSTOM_COMMAND=mvn test 
+
