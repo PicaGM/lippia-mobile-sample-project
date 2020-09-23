@@ -70,7 +70,7 @@
                 <crowdar.os.version>9.0</crowdar.os.version>
                 <crowdar.appLocation>bs://2316f8159619d2c692e508ce4169aa3f25bd6e02</crowdar.appLocation>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/browserStackCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
-                <crowdar.driverHub>https://javierre3:bzEKsszL8NzqsNsskaDk@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
+                <crowdar.driverHub>https://${env.BS_USER}:bzEKsszL8NzqsNsskaDk@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
             </properties>
         </profile>
     </profiles>
