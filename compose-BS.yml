@@ -8,8 +8,8 @@ services:
   lippia:
     image: crowdar/lippia:3.2.1.1
     volumes:  
-        - .:/mnt
-    working_dir: /mnt
-    environment:
-            - CUSTOM_COMMAND=ls -la
+        - .:/automation-workspace
+    working_dir: /automation-workspace
+    command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
+
 
