@@ -9,6 +9,7 @@ services:
     image: crowdar/lippia:3.2.1.1
     volumes:  
         - .:/automation-workspace
+        - ./.reports:/automation-workspace/target/
     working_dir: /automation-workspace
     command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
     environment:
