@@ -10,4 +10,4 @@ services:
     volumes:  
         - /builds/$CI_PROJECT_PATH/mnt:/mnt
     working_dir: /mnt
-    command: ls -la
+    command: pwd
