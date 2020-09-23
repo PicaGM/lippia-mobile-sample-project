@@ -10,4 +10,4 @@ services:
     volumes:  
         - /builds/$CI_PROJECT_PATH/mnt:/mnt
     working_dir: /mnt
-    command: ls -la /mnt & mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
+    command: ls -la & mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
