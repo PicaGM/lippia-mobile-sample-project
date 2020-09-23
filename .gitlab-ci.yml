@@ -7,14 +7,7 @@ image: tmaier/docker-compose:latest
     
 Testing 1/2:
   stage: test
-  variables:
-    MOUNT_POINT: /builds/$CI_PROJECT_PATH/mnt
   script:
-    - mkdir -p "$MOUNT_POINT"
-    # borro el contenido, y copio todos los archivos y el directorio source.
-    - rm -rf "$MOUNT_POINT"/* && cp $(find . -maxdepth 1 -type f) "$MOUNT_POINT" && cp -r src/ "$MOUNT_POINT"
-    #- docker run -v "$MOUNT_POINT:/mnt" -w '/mnt' -e 'CUSTOM_COMMAND=mvn clean test -PLocalHeadless -Dcucumber.tags=@Smoke' crowdar/lippia:3.2.1.1
-    - ls -la "$MOUNT_POINT"
     - docker-compose -f compose-BS.yml up --abort-on-container-exit --exit-code-from lippia
 
 #Testing 2/2:
