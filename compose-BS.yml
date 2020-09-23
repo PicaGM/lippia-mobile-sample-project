@@ -11,5 +11,5 @@ services:
         - /builds/root/lippia-mobile-sample-project/mnt:/mnt
     working_dir: /mnt
     environment:
-            - CUSTOM_COMMAND=mvn test 
+            - CUSTOM_COMMAND=ls -la
 
