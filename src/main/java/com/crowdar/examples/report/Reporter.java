@@ -9,7 +9,7 @@ import io.lippia.reporter.cucumber4.adapter.ReportServerApiAdapter;
 
 public class Reporter extends ReportServerApiAdapter{
 
-	public ReportServerApiReporter(String arg) {
+	public Reporter(String arg) {
 		super(arg);
 	}
 
