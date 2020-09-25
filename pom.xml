@@ -115,6 +115,7 @@
 						<LIPPIA_RS_API_PORT>8086</LIPPIA_RS_API_PORT>
 	                    <LIPPIA_RS_PROJECT_NAME>Mobile Sample</LIPPIA_RS_PROJECT_NAME>
 	                    <LIPPIA_RS_REPORT_NAME> BrowserStack - build</LIPPIA_RS_REPORT_NAME>
+	                    <extent.device>GogglePixel9</extent.device>
                 	</systemPropertyVariables>
 				</configuration>
             </plugin>
