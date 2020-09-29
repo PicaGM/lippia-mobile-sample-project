@@ -1,15 +1,13 @@
 package com.crowdar.examples.report;
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberGenericAdapter;
+import com.crowdar.driver.DriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.crowdar.driver.DriverManager;
+public class ReportServerReporter extends  ReportServerApiAdapter{
 
-import io.lippia.reporter.cucumber4.adapter.ReportServerApiAdapter;
-
-public class Reporter extends ReportServerApiAdapter{
-
-	public Reporter(String arg) {
+	public ReportServerReporter(String arg) {
 		super(arg);
 	}
 
@@ -19,4 +17,3 @@ public class Reporter extends ReportServerApiAdapter{
 	}
 
 }
-
