@@ -87,6 +87,11 @@
           <artifactId>cucumber4-adapter</artifactId>
           <version>1.2</version>
         </dependency>
+        <dependency>
+            <groupId>io.lippia.report</groupId>
+            <artifactId>extentreports-cucumber4-adapter</artifactId>
+            <version>1.1.0.10</version>
+        </dependency>
     </dependencies>
     <build>
         <testResources>

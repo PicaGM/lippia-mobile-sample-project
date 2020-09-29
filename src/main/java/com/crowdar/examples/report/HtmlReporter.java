@@ -1,9 +1,11 @@
 package com.crowdar.examples.report;
 
-import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberGenericAdapter;
-import com.crowdar.driver.DriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberGenericAdapter;
+import com.crowdar.driver.DriverManager;
+
 
 public class HtmlReporter extends ExtentCucumberGenericAdapter {
 
