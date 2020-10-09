@@ -16,5 +16,5 @@ Feature: As a potential client i want to interact with the mobile application
 
     Examples:
       | username   | email                | password |
-      | automation | automation@gmail.com |    |
+      | automation | automation@gmail.com | 888888   |
       | automation | automation@gmail.com | 123123   |
