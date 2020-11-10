@@ -69,7 +69,7 @@
                 <cucumber.runner>testng.xml</cucumber.runner>
                 <crowdar.deviceName>Google Pixel 3</crowdar.deviceName>
                 <crowdar.os.version>9.0</crowdar.os.version>
-                <crowdar.appLocation>bs://2316f8159619d2c692e508ce4169aa3f25bd6e02</crowdar.appLocation>
+                <crowdar.appLocation>bs://123e0b4ce2f64d5c359a2cd446d92b2f08355149</crowdar.appLocation>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/browserStackCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
                 <crowdar.driverHub>https://${env.BS_USER}:${env.BS_KEY}@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
             </properties>
