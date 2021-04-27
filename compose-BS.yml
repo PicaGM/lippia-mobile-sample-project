@@ -12,9 +12,10 @@ services:
         - .:/automation-workspace
         - ../reports:/reports
     working_dir: /automation-workspace
-    command: mvn clean test -P BrowserStack,Android -Dcucumber.tags=@Demo
+    command: mvn clean test -P BrowserStack,Android,customReporter -Dcucumber.tags=@Demo
     environment:
         - BS_USER=$BS_USER
         - BS_KEY=$BS_KEY
+        - REPORTER_API=$REPORTER_API
 
 

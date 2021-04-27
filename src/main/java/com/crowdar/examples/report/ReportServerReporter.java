@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 public class ReportServerReporter extends ReportServerApiAdapter{
 
 	public ReportServerReporter(String arg) {
-		super(arg);
+		super();
 	}
 
 	@Override
