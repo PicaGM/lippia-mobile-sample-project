@@ -1,4 +1,4 @@
-# Lippia Mobile test project
+# LIPPIA Mobile Example Project
 
 ## Purpose:
 The following project has the purpose of demonstrate and let test automation developers to
