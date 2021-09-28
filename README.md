@@ -35,6 +35,9 @@ Note that the following structure is part of the report generated with **ExtentR
     └── ...
 ```
 
+### index.html
+![ExtentReport example](docs/img/extentReportExample.png)
+
 ## Project structure
 
 A typical Lippia Test Automation project usually looks like this
