@@ -4,14 +4,36 @@
 The following project has the purpose of demonstrate and let test automation developers to
 to test a Mobile App using Lippia Automation Framework and Docker Android stack https://github.com/budtmo/docker-android, based on Budi Utomo Docker Android project.
 
-***
+## System Requirements: 
++ jdk: https://docs.oracle.com/en/java/javase/index.html 
++ maven: https://maven.apache.org/download.cgi 
++ git client: https://www.atlassian.com/git/tutorials/install-git 
++ docker 18.09+: https://docs.docker.com/install/linux/docker-ce/ubuntu/  _OPTIONAL_ 
++ docker compose 1.24+: https://docs.docker.com/compose/install/ _OPTIONAL_ 
 
-## Docker stack
+# Getting started
 
-The following project includes the basic Docker Lippia Containers to run this  web sample project. You can choose to run the code from your favourite IDE, run from console using the Docker Stack.
-To install and start a local instalation with Docker containers go to **Getting started** at the end of this guide.
+- Mobile emulated solution is only available for Linux user
+    [`Getting started - Linux User`](docs/README_Linux.md)
 
-![Lippia Extent Report](docs/img/architecture-mobile.png)
+# Reports integrations   
+
+We believe that the reports should express the results of our tests in the most legible, detailed and pleasant way possible, so that in this way, our clients have at their disposal a report on the operation and behavior of their product, as well as the performance of the team. That is why Lippia, in addition to supporting the integration with **ExtentReport**, provides a **ReportServer** for each client.   
+Next, we will see the structure of the project and from where we can access them.
+
+### Reports are generated in the folder called **target**, which will be generated once the execution of the test suite is finished.   
+Note that the following structure is part of the report generated with **ExtentReport** library.
+```
+├── lippia-mobile-sample-project
+    ├── docs
+    |   └── ...
+    ├── src
+    |   └── ...
+    ├── target
+    |   └── reports
+    |       └── index.html
+    └── ...
+```
 
 ## Project structure
 
@@ -218,8 +240,3 @@ The capabilities are located in a json file. This file is mandatory. The values 
   "unicodeKeyboard": "true"
 }
 ```
-
-# Getting started
-
-- Mobile emulated solution is only available for Linux user
-    [`Getting started - Linux User`](docs/README_Linux.md)
