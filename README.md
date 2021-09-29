@@ -13,9 +13,9 @@ to test a Mobile App using Lippia Automation Framework and Docker Android stack 
 
 # Getting started
 
-- [`Getting started - Running only with Maven`](docs/README_Linux.md)
-- [`Getting started - Running with Docker`](docs/README_Linux.md)
-- [`Getting started - Running with Vagrant`](docs/README_Linux.md)
+- Mobile emulated solution only using Maven [`Getting started - Running only with Maven`](docs/README_Linux.md)
+- Mobile emulated solution using Docker [`Getting started - Running with Docker`](docs/README_Linux.md)
+- Mobile emulated solution using Vagrant [`Getting started - Running with Vagrant`](docs/README_Linux.md)
 
 # Reports integrations   
 
