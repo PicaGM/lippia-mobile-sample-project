@@ -65,29 +65,29 @@
         <crowdar.deviceName>yourDeviceName</crowdar.deviceName>
       </properties>
     </profile>
-    ```    
+    ```
 
-    Fifth step:
-      - Go to Lippia-mobile-sample-project/src/main/resources/capabilities/androidCapabilities.json
-      - Find avd property, and replaces with deviceId.
-      - Follow the next instruction:
-      ```
-      {
-        "deviceName": "{{deviceName}}",
-        "app": "{{app}}",
-        "platformName": "Android",
-        "deviceId": "ip:5555",
-        "resetKeyboard": "true",
-        "unicodeKeyboard": "true"
-      }
-      ```
+  Fifth step:   
+    - Go to Lippia-mobile-sample-project/src/main/resources/capabilities/androidCapabilities.json   
+    - Find avd property, and replaces with deviceId.   
+    - Follow the next schema:
+    ```
+    {
+      "deviceName": "{{deviceName}}",
+      "app": "{{app}}",
+      "platformName": "Android",
+      "deviceId": "ip:5555",
+      "resetKeyboard": "true",
+      "unicodeKeyboard": "true"
+    }
+    ```
 
-      Sixth step:
-      - Open Appium Desktop and Start the server
-      - Finally, execute the following command:
-      ```
-      $ mvn clean test
-      ```
+  Sixth step:
+    - Open Appium Desktop and Start the server
+    - Finally, execute the following command:   
+    ```
+    $ mvn clean test
+    ```
 
 
 - #### Mobile emulated solution
