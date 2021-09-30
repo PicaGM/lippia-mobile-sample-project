@@ -1,7 +1,7 @@
 ## System requirements:
 + JDK (Java Development Kit): https://docs.oracle.com/en/java/javase/index.html
 + Maven: https://maven.apache.org/download.cgi 
-+ Android Studio & SDK tools (Software Development Kit): Android Studio & SDK tools: https://developer.android.com/studio
++ Android Studio & SDK tools (Software Development Kit): https://developer.android.com/studio
 + ADB (Android Debug Bridge): 
     - Windows User: https://dl.google.com/android/repository/platform-tools-latest-windows.zip
     - Linux User: ``$ sudo apt-get install adb``
