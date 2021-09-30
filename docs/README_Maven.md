@@ -103,7 +103,7 @@
     - Open Android Studio
     - Click on Configure
     - Click on AVD Manager
-      You should see the next screen:
+      _You should see the next screen:_
       ![AVD Manager screen](docs/img/AVDManagerMainScreen.png) 
 
   #### Second Step:
@@ -112,7 +112,7 @@
   #### Third Step:
     - Find your favourite device and click
     - Click on Next button   
-      You should see the next screen:   
+      _You should see the next screen:_   
       ![Virtual device configuration](docs/img/VirtualDeviceConfiguration.png)
 
   #### Fourth Step:
@@ -121,7 +121,7 @@
 
   #### Fifth step:
     - Click on finish button   
-      You should see the next screen:
+      _You should see the next screen:_   
       ![Main Screen / Device installed](docs/img/AndroidVirtualDeviceManager.png)
   
 
