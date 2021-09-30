@@ -3,7 +3,7 @@
 - SDK & SDK tools (Software Development Kit): URL
 - ADB (Android Debug Bridge): URL
 - Appium Desktop: URL
-- Android Studio: URL _OPTIONAL_
+- Emulators _OPTIONAL_
 
 ## Getting Started
 
