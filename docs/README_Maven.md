@@ -99,3 +99,29 @@
 
 
 - #### Mobile emulated solution
+  #### First step:
+    - Open Android Studio
+    - Click on Configure
+    - Click on AVD Manager
+
+  #### Second Step:
+    - Click on Create Virtual Device...
+      You should see the next screen:
+      ![]() 
+  
+  #### Third Step:
+    - Find your favourite device and click
+    - Click on Next button
+
+  #### Fourth Step:
+      You should see the next screen:
+      ![]()
+      - If you don't have installed a Release, select according to the android version you prefer
+        _We recommended installing R, Android 11.0_
+
+  #### Sixth step:
+    - Click on finish button
+      You should see the next screen:
+      ![]()
+  
+
