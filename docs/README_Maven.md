@@ -10,17 +10,17 @@
 ### Running with Maven
 
 - #### Mobile physical solution
-  First step:
+  #### First step:
     - Connect your device from USB to computer
     - From your device
       Enable developer mode and then enable USB debugging.   
       _Make sure that your cell phone is in file transfer mode and that the PC has detected it correctly_   
 
-  Second step:
+  #### Second step:
     - Obtain your mobile IP addresss   
-      _Settings -> About phone/tablet -> Status -> IP address_
-
-  Third step:
+      _Settings -> About phone/tablet -> Status -> IP address_   
+   
+  #### Third step:
     - Execute following commands:
       This command lists the connected devices
       ```
@@ -46,9 +46,9 @@
 
   **Troubleshooting:**   
     If you don't see "Developer" option in Settings -> About phone/table, follow these steps:   
-      - Go to **Settings** -> **About** -> **Build number** and tap 7 times
+      - Go to **Settings** -> **About** -> **Build number** and tap 7 times   
 
-  Fourth step:
+  #### Fourth step:
     - Go to Lippia Mobile Project, and go to pom.xml file.
     - Find deviceName property, and replace value with the name of your device
     ```
@@ -67,7 +67,7 @@
     </profile>
     ```
 
-  Fifth step:   
+  #### Fifth step:   
     - Go to:
     ```
     ├── src
@@ -90,7 +90,7 @@
     }
     ```
 
-  Sixth step:
+  #### Sixth step:
     - Open Appium Desktop and Start the server
     - Finally, execute the following command:   
     ```
