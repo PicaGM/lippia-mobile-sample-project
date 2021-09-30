@@ -1,13 +1,15 @@
 ## System requirements:
-- JDK (Java Development Kit): URL 
-- SDK & SDK tools (Software Development Kit): URL
-- ADB (Android Debug Bridge): URL
-- Appium Desktop: URL
-- Emulators _OPTIONAL_
++ JDK (Java Development Kit): https://docs.oracle.com/en/java/javase/index.html
++ Maven: https://maven.apache.org/download.cgi 
++ Android Studio & SDK tools (Software Development Kit): Android Studio & SDK tools: https://developer.android.com/studio
++ ADB (Android Debug Bridge): 
+    - Windows User: https://dl.google.com/android/repository/platform-tools-latest-windows.zip
+    - Linux User: ``$ sudo apt-get install adb``
++ Appium Desktop: https://appium.io/downloads.html
 
-## Getting Started
+## Getting Started   
 
-### Running with Maven
+## Go to [Mobile emulated solution](#Mobile-emulated-solution)
 
 - ### Mobile physical solution
   #### First step:
