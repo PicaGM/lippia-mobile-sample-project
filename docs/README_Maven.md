@@ -104,24 +104,24 @@
     - Click on Configure
     - Click on AVD Manager
       You should see the next screen:
-      ![]() 
+      ![AVD Manager screen](docs/img/AVDManagerMainScreen.png) 
 
   #### Second Step:
     - Click on Create Virtual Device...
   
   #### Third Step:
     - Find your favourite device and click
-    - Click on Next button
+    - Click on Next button   
       You should see the next screen:   
-      ![]()
+      ![Virtual device configuration](docs/img/VirtualDeviceConfiguration.png)
 
   #### Fourth Step:
     - If you don't have installed a Release, select according to the android version you prefer   
     _We recommended installing R, Android 11.0_
 
   #### Fifth step:
-    - Click on finish button
+    - Click on finish button   
       You should see the next screen:
-      ![]()
+      ![Main Screen / Device installed](docs/img/AndroidVirtualDeviceManager.png)
   
 
