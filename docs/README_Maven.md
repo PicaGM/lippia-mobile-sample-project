@@ -116,10 +116,10 @@
   #### Fourth Step:
       You should see the next screen:
       ![]()
-      - If you don't have installed a Release, select according to the android version you prefer
-        _We recommended installing R, Android 11.0_
+    - If you don't have installed a Release, select according to the android version you prefer
+      _We recommended installing R, Android 11.0_
 
-  #### Sixth step:
+  #### Fifth step:
     - Click on finish button
       You should see the next screen:
       ![]()
