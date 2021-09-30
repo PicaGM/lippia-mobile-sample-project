@@ -9,7 +9,7 @@
 
 ### Running with Maven
 
-- #### Mobile physical solution
+- ### Mobile physical solution
   #### First step:
     - Connect your device from USB to computer
     - From your device
@@ -98,26 +98,26 @@
     ```
 
 
-- #### Mobile emulated solution
+- ### Mobile emulated solution
   #### First step:
     - Open Android Studio
     - Click on Configure
     - Click on AVD Manager
+      You should see the next screen:
+      ![]() 
 
   #### Second Step:
     - Click on Create Virtual Device...
-      You should see the next screen:
-      ![]() 
   
   #### Third Step:
     - Find your favourite device and click
     - Click on Next button
+      You should see the next screen:   
+      ![]()
 
   #### Fourth Step:
-      You should see the next screen:
-      ![]()
-    - If you don't have installed a Release, select according to the android version you prefer
-      _We recommended installing R, Android 11.0_
+    - If you don't have installed a Release, select according to the android version you prefer   
+    _We recommended installing R, Android 11.0_
 
   #### Fifth step:
     - Click on finish button
