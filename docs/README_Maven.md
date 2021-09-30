@@ -68,7 +68,15 @@
     ```
 
   Fifth step:   
-    - Go to Lippia-mobile-sample-project/src/main/resources/capabilities/androidCapabilities.json   
+    - Go to:
+    ```
+    ├── src
+    |   └── main
+    |       └── resources
+    |           └── capabilities
+    |               └── androidCapabilities.json 
+    ├── ...
+    ```
     - Find avd property, and replaces with deviceId.   
     - Follow the next schema:
     ```
