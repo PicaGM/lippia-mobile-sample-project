@@ -44,7 +44,7 @@
         192.168.0.15:5555	device
       ```
 
-    **Troubleshooting:**   
+      **Troubleshooting:**   
       If you don't see "Developer" option in Settings -> About phone/table, follow these steps:   
         - Go to **Settings** -> **About** -> **Build number** and tap 7 times   
 
