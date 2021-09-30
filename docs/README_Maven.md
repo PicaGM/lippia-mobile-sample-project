@@ -15,6 +15,7 @@
 ~ Lorem IPSUM ~
 
 - ## Running with a physical device
+  Please note that this tutorial is written to guide you in order to run the tests on a physical device connected wirelessly to your computer.
   #### First step:
     - Connect your device from USB to computer
     - From your device
