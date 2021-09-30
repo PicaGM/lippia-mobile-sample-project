@@ -17,7 +17,7 @@
       _Make sure that your cell phone is in file transfer mode and that the PC has detected it correctly_   
 
   Second step:
-    - Obtain your mobile IP addresss
+    - Obtain your mobile IP addresss   
       _Settings -> About phone/tablet -> Status -> IP address_
 
   Third step:
