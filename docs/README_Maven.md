@@ -45,7 +45,7 @@
       ```
 
   **Troubleshooting:**   
-    If you don't see "Developer" option in Settings -> About phone/table, follow these steps:
+    If you don't see "Developer" option in Settings -> About phone/table, follow these steps:   
       - Go to Settings -> About -> Build number and tap 7 times
 
   Fourth step:
