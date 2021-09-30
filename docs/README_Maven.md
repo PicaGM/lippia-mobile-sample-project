@@ -9,9 +9,12 @@
 
 ## Getting Started   
 
-## Go to [Mobile emulated solution](#Mobile-emulated-solution)
+## Go to [Mobile physical solution](#running-with-a-physical-device)
+~ Lorem IPSUM ~
+## Go to [Mobile emulated solution](#running-with-a-emulated-device)
+~ Lorem IPSUM ~
 
-- ### Mobile physical solution
+- ## Running with a physical device
   #### First step:
     - Connect your device from USB to computer
     - From your device
@@ -99,13 +102,12 @@
     $ mvn clean test
     ```
 
-
-- ### Mobile emulated solution
+- ## Running with a emulated device
   #### First step:
     - Open Android Studio
     - Click on Configure
     - Click on AVD Manager
-      _You should see the next screen:_
+      _You should see the next screen:_   
       ![AVD Manager screen](docs/img/AVDManagerMainScreen.png) 
 
   #### Second Step:
