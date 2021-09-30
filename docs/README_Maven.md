@@ -107,7 +107,7 @@
   #### First step:
     - Open Android Studio
     - Click on Configure
-    - Click on AVD Manager
+    - Click on AVD Manager   
       _You should see the next screen:_   
       ![AVD Manager screen](docs/img/AVDManagerMainScreen.png) 
 
