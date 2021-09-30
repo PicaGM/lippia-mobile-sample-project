@@ -1,8 +1,4 @@
-## Lippia mobile apk sample project - Linux users
-
-## System Requirements :  
-+ Docker 18.09+: https://docs.docker.com/install/linux/docker-ce/ubuntu/
-+ Docker compose 1.24+: https://docs.docker.com/compose/install/
+# Running with Docker
 
 # Getting started
  [Download]: <https://github.com/Crowdar/Lippia-mobile-sample-project/archive/master.zip>
