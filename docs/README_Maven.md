@@ -13,7 +13,7 @@
 This type of execution gives you the possibility to run your tests on your own device without the need to use emulators,   
 and therefore you will notice certain advantages, such as: higher performance.
 ## Go to [Mobile emulated solution](#running-with-a-emulated-device)
-~ Lorem IPSUM ~
+This type of execution allows you to simulate a real device to run your tests on any type and version of device
 
 - ## Running with a physical device
   Please note that this tutorial is written to guide you in order to run the tests on a physical device connected wirelessly to your computer.
