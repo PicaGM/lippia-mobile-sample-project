@@ -14,7 +14,7 @@ to test a Mobile App using Lippia Automation Framework and Docker Android stack 
 
 # Getting started
 
-- Mobile emulated solution only using Maven [`Getting started - Running only with Maven`](docs/README_Maven.md)
+- Mobile physical & emulated solution only using Maven [`Getting started - Running only with Maven`](docs/README_Maven.md)
 - Mobile emulated solution using Docker [`Getting started - Running with Docker`](docs/README_Docker.md)
 
 # Reports integrations   
