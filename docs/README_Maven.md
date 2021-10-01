@@ -111,16 +111,16 @@
       _You should see the next screen:_   
       ![AVD Manager screen](docs/img/AVDManagerMainScreen.png) 
 
-  #### Second Step:
+  #### Second step:
     - Click on Create Virtual Device...
   
-  #### Third Step:
+  #### Third step:
     - Find your favourite device and click
     - Click on Next button   
       _You should see the next screen:_   
       ![Virtual device configuration](docs/img/VirtualDeviceConfiguration.png)
 
-  #### Fourth Step:
+  #### Fourth step:
     - If you don't have installed a Release, select according to the android version you prefer   
     _We recommended installing R, Android 11.0_
 
@@ -128,5 +128,22 @@
     - Click on finish button   
       _You should see the next screen:_   
       ![Main Screen / Device installed](docs/img/AndroidVirtualDeviceManager.png)
-  
 
+  #### Sixth step:
+    - Go to pom.xml file
+    - Edit the **deviceName** property located in **Local** profile with the name of your prefer mobile installed:
+    ```
+    <properties>
+      <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
+      <cucumber.runner>testng.xml</cucumber.runner>
+      <crowdar.avd>Pixel3</crowdar.avd>
+      <crowdar.appLocation>C:/workspace/crowdar/lippia/Lippia-mobile-sample-project/sample_apk/lippia.apk</crowdar.appLocation>
+      <crowdar.deviceName>Pixel3</crowdar.deviceName>
+    </properties>
+    ```
+
+  #### Seventh step:
+    - Execute the following command:
+    ```
+    $ mvn clean test
+    ```
