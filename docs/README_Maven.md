@@ -147,3 +147,4 @@
     ```
     $ mvn clean test
     ```
+  _Please note that it's not necessary to have opened Android Studio_
