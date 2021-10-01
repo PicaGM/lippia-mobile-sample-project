@@ -10,7 +10,8 @@
 ## Getting Started   
 
 ## Go to [Mobile physical solution](#running-with-a-physical-device)
-~ Lorem IPSUM ~
+This type of execution gives you the possibility to run your tests on your own device without the need to use emulators,   
+and therefore you will notice certain advantages, such as: higher performance.
 ## Go to [Mobile emulated solution](#running-with-a-emulated-device)
 ~ Lorem IPSUM ~
 
