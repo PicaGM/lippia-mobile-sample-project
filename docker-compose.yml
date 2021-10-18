@@ -9,9 +9,8 @@ services:
     image: crowdar/lippia:3.2.1.1
     depends_on:
         - hub
-        - samsung_s7_9.0
     volumes:  
-        - /builds/$CI_PROJECT_PATH/mnt:/opt/workspace/automation
+        - .:/opt/workspace/automation
     working_dir: /opt/workspace/automation
     command: mvn clean test -P StackLocal,Android -Dcucumber.tags=@Demo -Dcrowdar.driverHub=http://hub:4444/wd/hub
 
@@ -32,8 +31,8 @@ services:
       - 6080:6080
     # Change path of apk that you want to test. I use sample_apk that I provide in folder "example"
     volumes:
-      - /builds/$CI_PROJECT_PATH/mnt/sample_apk:/root/tmp/sample_apk
-      - /builds/$CI_PROJECT_PATH/mnt/video-samsung_s7_9:/tmp/video
+      - ./sample_apk:/root/tmp/sample_apk
+      - ./video-samsung_s7_9:/tmp/video
     environment:
       - DEVICE=Samsung Galaxy S7
       - CONNECT_TO_GRID=true
