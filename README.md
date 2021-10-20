@@ -48,27 +48,27 @@ A typical Lippia Test Automation project usually looks like this
 ├── main
 │  ├── java
 │  │  └── com
-│  │      └── crowdar
-│  │          └── examples
-│  │              ├── constants
-|  │	          │       └── HomeConstants.java
-|  │	          │       └── LoginConstants.java
-|  │	          │       └── SignUpConstants.java
-│  │              ├── services
-|  │	          │        └── HomeService.java
-|  │	          │        └── LoginService.java
-|  │	          │        └── SignUpService.java
-│  │              │ 
-│  │              └── steps
-│  │                    └── HomeSteps.java
-│  │                    └── LoginSteps.java
-│  │                    └── SignUpSteps.java
+│  │  └── crowdar
+│  │   └── examples
+│  │     ├── constants
+| 	│     │  └── HomeConstants.java
+| 	│     │  └── LoginConstants.java
+| 	│     │  └── SignUpConstants.java
+│  │     ├── services
+| 	│     │   └── HomeService.java
+| 	│     │   └── LoginService.java
+| 	│     │   └── SignUpService.java
+│  │     │ 
+│  │     └── steps
+│  │     └── HomeSteps.java
+│  │     └── LoginSteps.java
+│  │     └── SignUpSteps.java
 │  └── resources
-|           	├── capabilities
-|	            |         └── androidCapabilities
-|	            |         └── browserStackCapabilities	
-│               └── config.properties
-│               └── cucumber.properties
+|    	├── capabilities
+|     |  └── androidCapabilities
+|     |  └── browserStackCapabilities	
+│     └── config.properties
+│     └── cucumber.properties
 └── test
     ├── java
     │  └── com
