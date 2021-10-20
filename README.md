@@ -296,7 +296,7 @@ A Project Object Model or POM is the fundamental unit of work in Maven. It is an
 
 **Parallel Runner:**  
     
-- In the pom.xml file, it looks for the POM in the current directory and assign the value of **testingParalel.xml**  
+- In the pom.xml file, it looks for the POM in the current directory and assign the value of **testngParalel.xml**  
     
 - This would be as follows:  
 ```
