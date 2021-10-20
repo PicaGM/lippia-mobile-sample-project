@@ -46,94 +46,61 @@ A typical Lippia Test Automation project usually looks like this
 ```
 	.
 ├── main
-│   ├── java
-│   │   └── com
-│   │       └── crowdar
-│   │           └── examples
-│   │               ├── constants
-|   |		    |	|   |   |   |   └── HomeConstants.java
-|   |		    |	|   |   |   |   └── LoginConstants.java
-|   |		    |	|   |   |   |   └── SignUpConstants.java
-│   │               ├── services
-|   |		    |	|   |   |   |   └── HomeService.java
-|   |		    |	|   |   |   |   └── LoginService.java
-|   |		    |	|   |   |   |   └── SignUpService.java
-│   │               ├── pages
-│   │               │   └── ApiDemoHome.java
-│   │               └── steps
-│   │                   └── ApkApiDemoSteps.java
-│   │                   └── HomeSteps.java
-│   │                   └── LoginSteps.java
-│   │                   └── SignUpSteps.java
-│   └── resources
-|   |	|   └── locators
-|   |	|   |   └── LoginView.properties
-|   |	|   |   └── HomeView.properties
-|   |	|   |   └── SignUpView.properties
-|	├── capabilities
-|	|   └── androidCapabilities
-|	|   └── browserStackCapabilities	
-│       └── config.properties
-│       └── cucumber.properties
+│  ├── java
+│  │  └── com
+│  │      └── crowdar
+│  │          └── examples
+│  │              ├── constants
+|  │	          │       └── HomeConstants.java
+|  │	          │       └── LoginConstants.java
+|  │	          │       └── SignUpConstants.java
+│  │              ├── services
+|  │	          │        └── HomeService.java
+|  │	          │        └── LoginService.java
+|  │	          │        └── SignUpService.java
+│  │              │ 
+│  │              └── steps
+│  │                    └── HomeSteps.java
+│  │                    └── LoginSteps.java
+│  │                    └── SignUpSteps.java
+│  └── resources
+|           	├── capabilities
+|	            |         └── androidCapabilities
+|	            |         └── browserStackCapabilities	
+│               └── config.properties
+│               └── cucumber.properties
 └── test
     ├── java
-    │   ├── CrowdTestNgParallelRunner.java
-    │   ├── CrowdTestNgRunner.java
-    │   └── com
-    │       └── crowdar
-    │           └── Hooks.java
+    │  └── com
+    │      └── crowdar
+    │            └── Hooks.java
     └── resources
         └── features
-            └── ApiDemos.feature
-	    └── Demo.feature
+            └── Demos.feature
+	    
 ```
 
 Folder's description:
 
 |Path   |Description    |
 |-------|----------------|
-|main\java\\...\examples\pages\\\*.java|Folder with all the **PageObjects** matching steps with java code|
+|main\java\\...\examples\services\\\*.java|Folder with all the **Services** matching steps with java code|
 |main\java\\...\examples\steps\\\*Steps.java|Folder with all the **steps** which match with Gherkin Test Scenarios |
-|main\resources\locators\\\*.properties|Folder with all the **locators** which match with properties |
+|main\java\\...\examples\constants\\\*.java|Folder with all the **locators** which match with services |
 |test\resources\features\\\*.feature|Folder with all the **feature files** containing **Test Scenarios** and **Sample Data** |
 |main\resources|Folder with all configuration needed to run Lippia |
 |main\resources\capabilities\\\*json|Folder with all the capabilities availables for the driver |
 
-In this example, *ApiDemos* is the Apk the framework will interact with.
-The **steps** defined in *ApkApiDemoSteps.java* to execute the *Test Scenarios* defined in Gherkin language.
+In this example, *Demos* is the Apk the framework will interact with.
+The **steps** are defined to execute the *Test Scenarios* defined in Gherkin language.
 
 
 |File   | Description    |
 |-------|----------------|
-|ApiDemoHome.java   | PageObject: between each element in the aplication *ApiDemoHome* you want to interact with. You need to add one new file for each page you want to navigate in your tests. |
-|ApkApiDemoSteps.java   | StepOpject: Code to support the behaviour of each **step** coded into the feature files for the *ApiDemoHome*. This code executes the interaction between the Framework and the web application and match the steps with the code who run interactions. |
-|ApiDemos.feature| Feature file: Definition of the **Test Scenarios** with all the **steps** written in Cucumber format|
+|HomeService.java   | PageObject: between each element in the aplication *HomeService* you want to interact with. You need to add one new file for each page you want to navigate in your tests. |
+|HomeSteps.java   | StepObject: Code to support the behaviour of each **step** coded into the feature files for the *HomeService*. This code executes the interaction between the Framework and the web application and match the steps with the code who run interactions. |
+|Demos.feature| Feature file: Definition of the **Test Scenarios** with all the **steps** written in Cucumber format|
 
-## Page Object @DEPRECATED
-***    
-This is replaced by Services
-```
-public class ApiDemoHome extends PageBase{
-
-	public ApiDemoHome(SharedDriver driver){
-		super(driver);
-	}
-
-    public String getTitle(){
-    	return getMobileElement(By.xpath("//*[@resource-id='android:id/action_bar']")).findElement(By.xpath("//android.widget.TextView")).getText();
-    }
-
-    private WebElement getMenuElement(String menu){
-    	return getMobileElement(By.xpath("//android.widget.TextView[@content-desc="+"\""+menu+"\""+"]"));
-    }
-
-   public void clickMenuElement(String menu){
-       WebElement element = getMenuElement(menu);
-        element.click();
-   }
-
-}
-```
 
 ## Services
 ***    
@@ -184,17 +151,21 @@ public class LoginSteps extends PageSteps {
 }
 ```
 
-## Locators properties
+## Constants
 ***
 
-The locators can be written in .properties file located in src/main/resources/locators For example, to access email input in LoginView.properties we write: loginView.emailInput
+The locators are defined in this folder which are used in services classes. 
 
 ```
-emailInput=accessibility_id:emailAddressInputLogin
-passwordInput=accessibility_id:passwordInputLogin
-signInButtonAndroid=accessibility_id:signInButtonLogin
-signInButtonIos=accessibility_id:signInButtonLogin
-signUpButton=accessibility_id:signUpButtonLogin
+public class LoginConstants {
+
+    public static final String EMAIL_INPUT_LOCATOR = "ACCESSIBILITY_ID:emailAddressInputLogin";
+    public static final String PASSWORD_INPUT_LOCATOR = "ACCESSIBILITY_ID:passwordInputLogin";
+    public static final String SIGN_IN_BUTTON_LOCATOR = "ACCESSIBILITY_ID:signInButtonLogin";
+    public static final String SIGN_UP_BUTTON_LOCATOR = "ACCESSIBILITY_ID:signUpButtonLogin";
+
+    public static final String VIEW_NOT_DISPLAYED_MESSAGE = "Login page is not displayed.";
+}
 ```
 
 
@@ -206,26 +177,23 @@ The Test Scenarios can be written using BDD metodology. This project includes Cu
 ```
 Feature: As a potential client i want to interact with the mobile application
 
-  @Smoke
-  Scenario: The client starts the applicacion ApiDemos accesing to Bouncing Balls
-    Given The user opens the 'API Demos' application
-    When The user clicks over 'Animation' menu element
-    When The user clicks over 'Bouncing Balls' menu element
-    Then The user sees the application 'Animation/Bouncing Balls' open
+  Scenario Outline: The user starts the application, registers a new user, changes the language, log out of the app and log in to the app.
+    Given The app is loaded correctly
+    When The user goes to the Sign Up page
+    And The user registers a new user with: <username>, <email>, <password>
+    Then Home page is displayed
 
-  @Smoke
-  Scenario: The client starts the applicacion ApiDemos accesing to cloning
-    Given The user opens the 'API Demos' application
-    When The user clicks over 'Animation' menu element
-    When The user clicks over 'Cloning' menu element
-    Then The user sees the application 'Animation/Cloning' open
+    When The user changes the language
+    And The user log out of the app
+    Then Login page is displayed
 
-  @Smoke
-  Scenario: The client starts the applicacion ApiDemos accesing to Multiple Properties
-    Given The user opens the 'API Demos' application
-    When The user clicks over 'Animation' menu element
-    When The user clicks over 'Multiple Properties' menu element
-    Then The user sees the application 'Animation/Multiple Properties' open
+    When The user logs in the application with: <email>, <password>
+    Then Home page is displayed
+
+    @Demo
+    Examples:
+      | username   | email                | password |
+      | automation | automation@gmail.com | 123456   |
 ```
 
 
