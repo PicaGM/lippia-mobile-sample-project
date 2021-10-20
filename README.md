@@ -43,41 +43,42 @@ Note that the following structure is part of the report generated with **ExtentR
 
 A typical Lippia Test Automation project usually looks like this
 
+
 ```
-	.
+    .
 ├── main
-│  ├── java
-│  │  └── com
-│  │  └── crowdar
-│  │   └── examples
-│  │     ├── constants
-| 	│     │  └── HomeConstants.java
-| 	│     │  └── LoginConstants.java
-| 	│     │  └── SignUpConstants.java
-│  │     ├── services
-| 	│     │   └── HomeService.java
-| 	│     │   └── LoginService.java
-| 	│     │   └── SignUpService.java
-│  │     │ 
-│  │     └── steps
-│  │     └── HomeSteps.java
-│  │     └── LoginSteps.java
-│  │     └── SignUpSteps.java
-│  └── resources
-|    	├── capabilities
-|     |  └── androidCapabilities
-|     |  └── browserStackCapabilities	
-│     └── config.properties
-│     └── cucumber.properties
+│       ├── java
+│       │    └── com
+│       │        └── crowdar
+│       │               └── examples
+│       │                       ├── constants
+│       │                       │       └── HomeConstants.java
+│       │                       │       └── LoginConstants.java
+│       │                       │       └── SignUpConstants.java
+│       │                       ├── services
+│       │                       │       └── HomeService.java
+│       │                       │       └── LoginService.java
+│       │                       │       └── SignUpService.java
+│       │                       │ 
+│       │                       └── steps
+│       │                               └── HomeSteps.java
+│       │                               └── LoginSteps.java
+│       │                               └── SignUpSteps.java
+│       └── resources
+|               ├── capabilities
+|               |       └── androidCapabilities
+|               |       └── browserStackCapabilities  
+│               └── config.properties
+│               └── cucumber.properties
 └── test
     ├── java
-    │  └── com
-    │      └── crowdar
-    │            └── Hooks.java
+    │       └── com
+    │           └── crowdar
+    │                   └── Hooks.java
     └── resources
         └── features
             └── Demos.feature
-	    
+        
 ```
 
 Folder's description:
