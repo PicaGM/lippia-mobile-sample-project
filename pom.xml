@@ -16,7 +16,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <crowdar.cucumber.filter>@Demo</crowdar.cucumber.filter>
-        <cucumber.runner>testngParallel.xml</cucumber.runner>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.option>src/test/resources/features --glue com/crowdar --glue com/crowdar/bdd/cukes  --tags ${crowdar.cucumber.filter} --tags 'not @Ignore' --plugin com.crowdar.examples.report.Reporter: --plugin pretty</crowdar.cucumber.option>
         <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
@@ -73,6 +72,28 @@
                 <crowdar.driverHub>https://user:key@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
             </properties>
         </profile>
+
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+		<!--   Profiles related to Runners ejecutions         -->
+		<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+		<profile> 
+			<id>secuencial</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<runner>testngSecuencial.xml</runner>
+			</properties>
+		</profile>
+
+		<profile> 
+			<id>parallel</id>
+			<properties>
+				<runner>testngParallel.xml</runner>
+			</properties>
+		</profile>
+
     </profiles>
 
     <dependencies>
