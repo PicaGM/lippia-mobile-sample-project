@@ -31,7 +31,7 @@
             </activation>
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
-                <cucumber.runner>testng.xml</cucumber.runner>
+                <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>Pixel3</crowdar.avd>
                 <crowdar.appLocation>C:\\\\Users\\\\golde\\\\Desktop\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
@@ -64,12 +64,13 @@
     	<profile>
             <id>BrowserStack</id>
             <properties>
-                <cucumber.runner>testng.xml</cucumber.runner>
+                <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.deviceName>Google Pixel 3</crowdar.deviceName>
                 <crowdar.os.version>9.0</crowdar.os.version>
-                <crowdar.appLocation>bs://7e498849c478c31cba239bb5edcd0a73cd3c3fed</crowdar.appLocation>
+                <crowdar.appLocation>bs://234d6e39e29922cb204f18ddc0dc32592b556f6e</crowdar.appLocation>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/browserStackCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
-                <crowdar.driverHub>https://user:key@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
+                <crowdar.driverHub>https://javierre3:bzEKsszL8NzqsNsskaDk@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
+                <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>
             </properties>
         </profile>
 
