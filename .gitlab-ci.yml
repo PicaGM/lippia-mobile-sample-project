@@ -13,7 +13,7 @@ Build:
 Test-Reporte:
   stage: testReporte
   script:
-    - mvn clean test $PROFILE1 $PROFILE2 $PROFILE3 -PreportServer -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="$BUILD:$TAG - $CI_PIPELINE_ID" -Dcrowdar.driverHub=$URL
+    - mvn clean test $PROFILE1 $PROFILE2 $PROFILE3 -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="$BUILD:$TAG - $CI_PIPELINE_ID" -Dcrowdar.driverHub=$URL
     - echo "$PROFILE3"
   artifacts:
     name: $CI_BUILD_NAME_$CI_PIPELINE_ID
@@ -26,7 +26,7 @@ Test-Reporte:
 Test-ADemanda:
   stage: testManual
   script:
-    - mvn clean test $PROFILE1 $PROFILE2 -PchromeHeadless -PreportServer -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="A Demanda:$TAG - $CI_PIPELINE_ID"
+    - mvn clean test $PROFILE1 $PROFILE2 -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="A Demanda:$TAG - $CI_PIPELINE_ID"
   artifacts:
     name: $CI_BUILD_NAME_$CI_PIPELINE_ID
     when: always
