@@ -22,15 +22,3 @@ Test-Reporte:
       - target/extent-reports/
   only:
     - schedules
-
-Test-ADemanda:
-  stage: testManual
-  script:
-    - mvn clean test $PROFILE1 $PROFILE2 -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="A Demanda:$TAG - $CI_PIPELINE_ID"
-  artifacts:
-    name: $CI_BUILD_NAME_$CI_PIPELINE_ID
-    when: always
-    paths:
-      - target/extent-reports/
-  only:
-    - web
