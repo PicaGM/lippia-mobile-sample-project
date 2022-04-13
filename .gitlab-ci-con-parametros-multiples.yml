@@ -1,0 +1,36 @@
+image: crowdar/lippia:3.2.3.8-SNAPSHOT
+
+stages:
+  - build
+  - testReporte
+  - testManual
+
+Build:
+  stage: build
+  script:
+    - mvn compile
+
+Test-Reporte:
+  stage: testReporte
+  script:
+    - mvn clean test $PROFILE1 $PROFILE2 $PROFILE3 -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="$BUILD:$TAG - $CI_PIPELINE_ID" -Dcrowdar.driverHub=$URL
+    - echo "$PROFILE3"
+  artifacts:
+    name: $CI_BUILD_NAME_$CI_PIPELINE_ID
+    when: always
+    paths:
+      - target/extent-reports/
+  only:
+    - schedules
+
+Test-ADemanda:
+  stage: testManual
+  script:
+    - mvn clean test $PROFILE1 $PROFILE2 -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="A Demanda:$TAG - $CI_PIPELINE_ID"
+  artifacts:
+    name: $CI_BUILD_NAME_$CI_PIPELINE_ID
+    when: always
+    paths:
+      - target/extent-reports/
+  only:
+    - web
