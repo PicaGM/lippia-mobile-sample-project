@@ -9,15 +9,17 @@ Build-app:
   stage: build
   script:
     - echo 'Building app'
+    - echo 'Uploading apk to browserstack'
+    - curl -u "javierre3:bzEKsszL8NzqsNsskaDk" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@./sample_apk/lippia.apk"
     
 Testing:
   stage: test
   script:
     - docker-compose -f docker-compose.yml up --abort-on-container-exit --exit-code-from lippia
   allow_failure: true
-  artifacts:
-    paths:
-      - target/reports/
+#  artifacts:
+#    paths:
+#      - target/reports/
 
 Deploy:
   stage: deploy
