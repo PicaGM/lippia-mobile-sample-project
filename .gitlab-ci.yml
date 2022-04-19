@@ -1,24 +1,25 @@
-image: crowdar/lippia:3.2.3.8-SNAPSHOT
-
+image: tmaier/docker-compose:latest
+ 
 stages:
   - build
-  - testReporte
-  - testManual
-
-Build:
+  - test
+  - deploy
+  
+Build-app:
   stage: build
   script:
-    - mvn compile
-
-Test-Reporte:
-  stage: testReporte
+    - echo 'Building app'
+    
+Testing:
+  stage: test
   script:
-    - mvn clean test $PROFILE1 $PROFILE2 $PROFILE3 -Dcucumber.tags="--tags '$TAG'" -DbuildIdentifier="$BUILD:$TAG - $CI_PIPELINE_ID" -Dcrowdar.driverHub=$URL
-    - echo "$PROFILE3"
+    - docker-compose -f local-docker-compose.yml up --abort-on-container-exit --exit-code-from lippia
+  allow_failure: true
   artifacts:
-    name: $CI_BUILD_NAME_$CI_PIPELINE_ID
-    when: always
     paths:
-      - target/extent-reports/
-  only:
-    - schedules
+      - target/reports/
+
+#Deploy:
+#  stage: deploy
+#  script: 
+#    - echo 'deploying app in custom server'
