@@ -10,7 +10,7 @@ Build-app:
   script:
     - echo 'Building app'
     - echo 'Uploading apk to browserstack'
-    - curl -u "javierre3:bzEKsszL8NzqsNsskaDk" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@./sample_apk/lippia.apk"
+#    - curl -u "javierre3:bzEKsszL8NzqsNsskaDk" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@./sample_apk/lippia.apk"
     
 Testing:
   stage: test
