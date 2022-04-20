@@ -67,7 +67,7 @@
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.deviceName>Google Pixel 3</crowdar.deviceName>
                 <crowdar.os.version>9.0</crowdar.os.version>
-                <crowdar.appLocation>bs://234d6e39e29922cb204f18ddc0dc32592b556f6e</crowdar.appLocation>
+                <crowdar.appLocation>bs://ce34ba2f83d9c476fb87d7cca2e885383c8f4124</crowdar.appLocation>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/browserStackCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
                 <crowdar.driverHub>https://javierre3:bzEKsszL8NzqsNsskaDk@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
                 <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>
