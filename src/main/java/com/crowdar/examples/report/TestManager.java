@@ -1,13 +1,15 @@
 package com.crowdar.examples.report;
 
 import com.crowdar.driver.DriverManager;
-import io.lippia.reporter.cucumber4.adapter.ReportServerApiAdapter;
+
+import io.lippia.reporter.ltm.TestManagerAPIAdapter;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-public class RSReporter extends ReportServerApiAdapter {
+public class TestManager extends TestManagerAPIAdapter {
 
-	public RSReporter(String arg) {
+	public TestManager(String arg) {
 		super();
 	}
 
