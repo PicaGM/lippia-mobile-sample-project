@@ -19,25 +19,30 @@ to test a Mobile App using Lippia Automation Framework and Docker Android stack 
 
 # Reports integrations   
 
-We believe that the reports should express the results of our tests in the most legible, detailed and pleasant way possible, so that in this way, our clients have at their disposal a report on the operation and behavior of their product, as well as the performance of the team. That is why Lippia, in addition to supporting the integration with **ExtentReport**, provides a **ReportServer** for each client.   
-Next, we will see the structure of the project and from where we can access them.
+We believe that the reports should express the results of our tests in the most legible, detailed and pleasant way possible, so that in this way, our clients have at their disposal a report on the operation and behavior of their product, as well as the performance of the team. 
+This example offers different reporting outoputs:
+- **Cucumber Reporting Pretty Console Output**: this reporter ius useful to see log execution in console output, in the IDE and in the CI/CD pipeline output. 
+- **Lippia Test Manager**  a solution that combines Manual and Automation tests results in a single platform. To know more see [Lippia.io](https://lippia.io)
+- **ExtentReport** a community solution for simple reports. To know more see [Extent Reports documentation](https://www.extentreports.com/docs/versions/4/java/cucumber4.html)
 
-### Reports are generated in the folder called **target**, which will be generated once the execution of the test suite is finished.   
-Note that the following structure is part of the report generated with **ExtentReport** library.
-```
-├── lippia-mobile-sample-project
-    ├── docs
-    |   └── ...
-    ├── src
-    |   └── ...
-    ├── target
-    |   └── reports
-    |       └── index.html
-    └── ...
-```
+### **Cucumber Reporting Pretty Console Output ###
+By default this project uses Cucumber Reporting plugin with console output. This plugin shows results in plain console that is useful for development environments and CI-CD pipelines.
 
-### index.html
-![ExtentReport example](docs/img/extentReportExample.png)
+!<img src="docs/img/pretty-console-output.png" width="800px" alt="Pretty console Output"></img>
+
+
+### Lippia Test Manager ###
+This integration uses an adaptar that automatically ingests results of Scenarios into Lippia Test Manager. 
+You just simply need to implement [*LTM-adapter-cucumber4-JVM*](https://github.com/Crowdar/LTM-adapter-cucumber4-JVM) and you can see the results in Lippia Test Manager as an Automated Run Result.
+
+!<img src="docs/img/LTM-RunLists.png" width="800px" alt="Runs List"></img>
+!<img src="docs/img/LTM-RunAutomatedResult.png" width="800px" alt="Run Automated Result sample"></img>
+
+### Extent Reports Integration ###
+Reports are generated in the folder called **target**, which will be generated once the execution of the test suite is finished.   
+Note that the following structure is part of the report generated with **ExtentReport** library after running the test project using the Extent plugin. Results report can be found at *lippia-mobile-sample-project/target/reports/index.html*
+
+!<img src="docs/img/extentReportExample.png" width="800px" alt="index.hmtl sample"></img>
 
 ## Project structure
 

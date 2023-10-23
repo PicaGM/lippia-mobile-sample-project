@@ -137,7 +137,7 @@
                     <systemPropertyVariables>
                         <TEST_MANAGER_USERNAME>admin</TEST_MANAGER_USERNAME>
                         <TEST_MANAGER_PASSWORD>admin</TEST_MANAGER_PASSWORD>
-                        <TEST_MANAGER_API_HOST>https://runs.dev.lippia.io</TEST_MANAGER_API_HOST>
+                        <TEST_MANAGER_API_HOST>https://runs.demo.lippia.io</TEST_MANAGER_API_HOST>
                         <TEST_MANAGER_API_PORT></TEST_MANAGER_API_PORT>
                         <TEST_MANAGER_RUN_NAME>Mobile Demo</TEST_MANAGER_RUN_NAME>
                         <TEST_MANAGER_PROJECT_CODE>LIPDEM</TEST_MANAGER_PROJECT_CODE>
