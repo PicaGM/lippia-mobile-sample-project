@@ -25,7 +25,7 @@ This example offers different reporting outoputs:
 - **Lippia Test Manager**  a solution that combines Manual and Automation tests results in a single platform. To know more see [Lippia.io](https://lippia.io)
 - **ExtentReport** a community solution for simple reports. To know more see [Extent Reports documentation](https://www.extentreports.com/docs/versions/4/java/cucumber4.html)
 
-### **Cucumber Reporting Pretty Console Output ###
+### Cucumber Reporting Pretty Console Output ###
 By default this project uses Cucumber Reporting plugin with console output. This plugin shows results in plain console that is useful for development environments and CI-CD pipelines.
 
 !<img src="docs/img/pretty-console-output.png" width="800px" alt="Pretty console Output"></img>
