@@ -13,8 +13,10 @@ Feature: As a potential client i want to interact with the mobile application
 
     When The user logs in the application with: <email>, <password>
     Then Home page is displayed
+     
 
     Examples:
       | username   | email                | password |
       | automation | automation@gmail.com | 123456   |
       | automation | automation@gmail.com | 456789   |
+
