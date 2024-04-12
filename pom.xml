@@ -20,6 +20,7 @@
         <crowdar.cucumber.filter>@Demo</crowdar.cucumber.filter>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.plugins>--plugin pretty --plugin com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: --plugin com.crowdar.examples.listeners.CucumberListener:</crowdar.cucumber.plugins>
+        <test-manager-plugin>--plugin com.crowdar.examples.report.TestManager:</test-manager-plugin>
         <crowdar.cucumber.option>src/test/resources/features --glue com/crowdar --glue com/crowdar/bdd/cukes  --tags ${crowdar.cucumber.filter} --tags 'not @Ignore' --plugin com.crowdar.examples.report.Reporter: --plugin pretty</crowdar.cucumber.option>
         <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
         <crowdar.remoteDriverType></crowdar.remoteDriverType>
@@ -112,6 +113,11 @@
             <groupId>io.lippia.report</groupId>
             <artifactId>extentreports-cucumber4-adapter</artifactId>
             <version>1.1.0.10</version>
+        </dependency>
+        <dependency>
+            <groupId>io.lippia.report</groupId>
+            <artifactId>ltm-cucumber4-adapter</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
