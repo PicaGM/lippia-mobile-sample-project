@@ -17,6 +17,28 @@ to test a Mobile App using Lippia Automation Framework and Docker Android stack 
 - Mobile physical & emulated solution only using Maven [`Getting started - Running only with Maven`](docs/README_Maven.md)
 - Mobile emulated solution using Docker [`Getting started - Running with Docker`](docs/README_Docker.md)
 
+### Appium instalation ###
+- If you have appium installed, proceed to uninstall it and then use this command in terminal **"npm i -location=global appium"**, after this step restart the pc.
+- Now we will execute the following command **"appium driver install uiautomator2"**.
+- Once appium is installed, it must be run with the **"appium"** command through a terminal.
+
+### Appium inspector instalation ###
+- Enter the following link: https://github.com/appium/appium-inspector/releases and download the version corresponding to your operating system and install it.
+- Once installed, we will configure the inspector by verifying that it has the local IP on the **“Remote Host”** on port **“4723”** and verify that the **“Remote Path”** only contains “/”.
+
+### Error prevention ###
+- When you have an appium server up, run the following commands at the same time as the emulator is up in a console:
+```
+adb uninstall io.appium.uiautomator2.server
+```
+```
+adb uninstall 	io.appium.uiautomator2.server.test
+```
+This is done in order to prevent problems between the uiautomato2 of previous versions of appium which causes problems when inspecting or executing tests in the new version.
+
+
+
+
 # Reports integrations   
 
 We believe that the reports should express the results of our tests in the most legible, detailed and pleasant way possible, so that in this way, our clients have at their disposal a report on the operation and behavior of their product, as well as the performance of the team. 
@@ -208,14 +230,16 @@ Feature: As a potential client i want to interact with the mobile application
 
 The capabilities are located in a json file. This file is mandatory. The values that are inside "{{}}" are replaced with the values located in config.properties and in that file, the key must be equal to the property to replace. For example, in config.properties: deviceName=Android ; Avd property must be empty in case of using a real device.
 
+### Android Studio Capabilities
 ```
 {
-  "deviceName": "{{deviceName}}",
-  "app": "{{app}}",
+  "appium:deviceName": "{{deviceName}}",
+  "appium:app": "{{app}}",
   "platformName": "Android",
-  "avd": "{{avd}}",
-  "resetKeyboard": "true",
-  "unicodeKeyboard": "true"
+  "appium:avd": "{{avd}}",
+  "appium:resetKeyboard": "true",
+  "appium:unicodeKeyboard": "true",
+  "appium:automationName": "UiAutomator2"
 }
 ```
 

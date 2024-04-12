@@ -2,8 +2,8 @@ package com.crowdar.examples.report;
 
 import com.crowdar.driver.DriverManager;
 
-import io.lippia.reporter.ltm.TestManagerAPIAdapter;
 
+import io.lippia.reporter.ltm.TestManagerAPIAdapter;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
