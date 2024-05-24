@@ -13,6 +13,15 @@
        <version>3.3.0.2</version>
     </parent>
 
+    <developers>
+        <developer>
+            <id>IAM</id>
+            <name>Ignacio Agustin Mahona</name>
+            <email>iagustinmahona@gmail.com</email>
+            <timezone>Latam/Argentina</timezone>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>dd-MM-yyyy-HH-mm-ss</maven.build.timestamp.format>
@@ -39,8 +48,8 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
-                <crowdar.avd>Pixel_3_API_29</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Documentos\\\\Desarrollo\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.avd>Pixel3</crowdar.avd>
+                <crowdar.appLocation>C:\\\\Users\\\\iagus\\\\Desktop\\\\Programacion\\\\Crowdar\\\\Advanced Automation\\\\Proyectos\\\\TP7-AdvancedAutomation\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
             </properties>
         </profile>
@@ -76,7 +85,7 @@
                 <crowdar.os.version>9.0</crowdar.os.version>
                 <crowdar.appLocation>bs://9d10b7f91c8ed05e264b3aeea6f1ec7bbe5a4081</crowdar.appLocation>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/browserStackCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
-                <crowdar.driverHub>https://javierre2:hQxpAVNy6nnyas3QxQcj@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
+                <crowdar.driverHub>https://${env.BSUSER}:${env.AUTHTOKEN}@hub-cloud.browserstack.com/wd/hub</crowdar.driverHub>
                 <crowdar.projectType>MOBILE_ANDROID</crowdar.projectType>
             </properties>
         </profile>
