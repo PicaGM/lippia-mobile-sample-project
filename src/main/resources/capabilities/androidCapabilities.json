@@ -1,9 +1,10 @@
 {
-  "appium:deviceName": "{{deviceName}}",
-  "appium:app": "{{app}}",
+  "appium:deviceName": "Pixel3",
+  "appium:app": "C:\\Clockify.apk",
   "platformName": "Android",
-  "appium:avd": "{{avd}}",
+  "appium:avd": "Pixel3",
   "appium:resetKeyboard": "true",
   "appium:unicodeKeyboard": "true",
-  "appium:automationName": "UiAutomator2"
+  "appium:automationName": "UiAutomator2",
+  "appium:noSign": "true"
 }

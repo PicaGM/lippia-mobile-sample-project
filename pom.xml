@@ -26,7 +26,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>dd-MM-yyyy-HH-mm-ss</maven.build.timestamp.format>
         <buildIdentifier>lippia_mobile_sample_project_${maven.build.timestamp}</buildIdentifier>
-        <crowdar.cucumber.filter>@Demo</crowdar.cucumber.filter>
+        <crowdar.cucumber.filter>@Clockify</crowdar.cucumber.filter>
         <crowdar.driverHub></crowdar.driverHub>
         <crowdar.cucumber.plugins>--plugin pretty --plugin com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter: --plugin com.crowdar.examples.listeners.CucumberListener:</crowdar.cucumber.plugins>
         <test-manager-plugin>--plugin com.crowdar.examples.report.TestManager:</test-manager-plugin>
@@ -49,7 +49,7 @@
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>Pixel3</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\iagus\\\\Desktop\\\\Programacion\\\\Crowdar\\\\Advanced Automation\\\\Proyectos\\\\TP7-AdvancedAutomation\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.appLocation>C:\\\\Clockify.apk</crowdar.appLocation>
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
             </properties>
         </profile>
